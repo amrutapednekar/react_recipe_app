@@ -1,0 +1,59 @@
+[
+    { 
+        "name": "Masala Tea",
+        "desc": "Best tea made with hand picked tra from Aasam ",
+        "ingredients" : [ 
+            {"name": "Milk", "amount": 1, "measurement": "cup" },
+            {"name":"Sugar", "amount": 2, "measurement": "tsp" },
+            {"name":"Cardamom powder", "amount": 1 , "measurement": "pinch" },
+            {"name":"Dry fruits powder", "amount": 1 , "measurement": "tsp" }
+        ],
+        "steps" : [ 
+            "Take 1 cup milk",
+            "Heat it to boil.",
+            "Add sugar, cardamom powder and dry fruits powder.",
+            "Boil it for 2 more minutes",
+            "Stir well",
+            "Serve it hot with saffron on it."
+        ]
+    },
+    { 
+        "name": "Pasta",
+        "desc": "Vegetarian fresh pasta made in variaties of decilious sauces",
+        "ingredients" : [ 
+            {"name": "Milk", "amount": 2, "measurement": "cups" },
+            {"name":"Pasta sauce", "amount": 2, "measurement": "tsp" },
+            {"name":"Water", "amount": 3 , "measurement": "cups" },
+            {"name":"Dry fruits powder", "amount": 1 , "measurement": "tsp" }
+        ],
+        "steps" : [ 
+            "Take 3 cups water",
+            "Heat it to boil.",
+            "Add 2 cups pasta",
+            "Boil it for 5 more minutes.",
+            "Let it cook till soft",
+            "Once cooked, remove all excess water.",
+            "Add ready made pasta sauce",
+            "Stir well.",
+            "Serve hot with grated cheese on it."
+        ]
+    },
+    { 
+        "name": "Mango Lassi",
+        "desc": "Famous Indian soft drink mad with fresh Alphonso mangos",
+        "ingredients" : [ 
+            {"name": "Milk", "amount": 2, "measurement": "cups" },
+            {"name":"Mango pulp", "amount": "half", "measurement": "cup" },
+            {"name":"Sugar", "amount": 3 , "measurement": "tsp" },
+            {"name":"Chopped Dry fruits ", "amount": 1 , "measurement": "tsp" }
+        ],
+        "steps" : [ 
+            "Take 2 cups cold milk",
+            "Add half cups of mango pulp.",
+            "Add sugar",
+            "Grind it tohether in mixer.",
+            "Chill it in fridge.",
+            "Serve cold with chopped dry fruits."
+        ]
+    }
+]

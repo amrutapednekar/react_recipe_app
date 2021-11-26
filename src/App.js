@@ -1,24 +1,35 @@
-import logo from './logo.svg';
+import React, {useState} from 'react'
 import './App.css';
+import data from './data/recipes.json';
+import Menu from './components/Menu';
 
 function App() {
+  const [recipes, setRecipes] = useState(data);
+  function searchWithBasicApproach(query) {
+    if (!query) {return data;}
+   return data.filter((recipe) => (recipe.name.toLowerCase().includes(query.toLowerCase()) ));
+  }
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+         <h1 style={{fontStyle:"italic"}} align="center" > Delicious Recipes</h1>
       </header>
-    </div>
+
+      <form className="search-form" onSubmit={(event) => {
+          event.preventDefault();
+          const query =event.target.elements.query.value;
+          const results = searchWithBasicApproach(query);
+          setRecipes(results);
+        }}>
+        <input className="search-bar" type="text" id="query"/>
+        <button className="search-button" type="submit" >
+             Search
+        </button>
+      </form>
+
+      <Menu recipes={recipes} />
+     </div>
   );
 }
 
